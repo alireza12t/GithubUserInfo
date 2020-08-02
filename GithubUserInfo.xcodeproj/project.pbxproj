@@ -18,6 +18,8 @@
 		F567C54024D6C0490072A02A /* JSonNull.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C53C24D6C0480072A02A /* JSonNull.swift */; };
 		F567C54124D6C0490072A02A /* EpmtyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C53D24D6C0480072A02A /* EpmtyResponse.swift */; };
 		F567C54224D6C0490072A02A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C53E24D6C0490072A02A /* User.swift */; };
+		F567C54424D6C0800072A02A /* GithubError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C54324D6C0800072A02A /* GithubError.swift */; };
+		F567C54624D6C0980072A02A /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C54524D6C0980072A02A /* APIFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		F567C53C24D6C0480072A02A /* JSonNull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSonNull.swift; sourceTree = "<group>"; };
 		F567C53D24D6C0480072A02A /* EpmtyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpmtyResponse.swift; sourceTree = "<group>"; };
 		F567C53E24D6C0490072A02A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F567C54324D6C0800072A02A /* GithubError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubError.swift; sourceTree = "<group>"; };
+		F567C54524D6C0980072A02A /* APIFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFetcher.swift; sourceTree = "<group>"; };
 		FD24D72A66B9286074C3B24A /* Pods-GithubUserInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubUserInfo.release.xcconfig"; path = "Target Support Files/Pods-GithubUserInfo/Pods-GithubUserInfo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +135,8 @@
 		F567C53324D6BFDC0072A02A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F567C54324D6C0800072A02A /* GithubError.swift */,
+				F567C54524D6C0980072A02A /* APIFetcher.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -274,7 +280,9 @@
 			files = (
 				F567C54024D6C0490072A02A /* JSonNull.swift in Sources */,
 				F567C53524D6C0060072A02A /* Array.swift in Sources */,
+				F567C54624D6C0980072A02A /* APIFetcher.swift in Sources */,
 				F567C54124D6C0490072A02A /* EpmtyResponse.swift in Sources */,
+				F567C54424D6C0800072A02A /* GithubError.swift in Sources */,
 				F567C53F24D6C0490072A02A /* Repositories.swift in Sources */,
 				F567C54224D6C0490072A02A /* User.swift in Sources */,
 				F567C52524D6BE660072A02A /* ContentView.swift in Sources */,
