@@ -8,7 +8,7 @@ import Foundation
 
 // MARK: - User
 struct UserData: Codable {
-    let data: DataClass
+    let data: DataClass?
 
 }
 

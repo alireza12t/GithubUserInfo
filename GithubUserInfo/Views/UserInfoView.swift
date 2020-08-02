@@ -69,7 +69,7 @@ private extension UserInfoView {
                     }
                 }
             }
-            .padding()
+            
             
             HStack {
                 if userModel.websiteURL != nil {
@@ -84,7 +84,7 @@ private extension UserInfoView {
                     }
                 }
             }
-            .padding()
+            
             
             HStack {
                 if userModel.email != nil {
@@ -99,8 +99,8 @@ private extension UserInfoView {
                     }
                 }
             }
-            .padding()
-        }
+            
+        }.padding()
     }
     var WorkInfo: some View {
         VStack(alignment: .leading, spacing: 15) {
@@ -126,7 +126,7 @@ private extension UserInfoView {
                             .foregroundColor(.white)
                     }
                 }
-                    .padding()
+                   
             }
             
             if userModel.isHireable != nil {
@@ -145,9 +145,9 @@ private extension UserInfoView {
                     Text("❌")
                 }
             }
-            .padding()
+            
             }
-        }
+        }.padding()
     }
     
     var PersonalInfo: some View {
@@ -190,7 +190,7 @@ private extension UserInfoView {
                     .padding()
             }
             
-        }
+        }.fixedSize()
     }
     
     var Profile: some View {

@@ -23,12 +23,10 @@ struct ContentView: View {
                     SearchField
                     
                 }
-                
+                if viewModel.userData != nil {
                 Section {
                     NavigationLink(
-                        destination: UserInfoView(model: User(
-                                                    avatarURL: "https://avatars0.githubusercontent.com/u/561467?u=26a6693a3019abe5e97431278f9a557f34dbce60&v=4",
-                                                    company: "mh", companyHTML: "https://google.com", createdAt: "2011-01-12T23:01:02Z", email: "mr.toghyiani@icvks.com", followers: Follow(total: 12), following: Follow(total: 23), isHireable: true, id: "fkfkkhsfhs", location: "tehran", login: "alireza12t", name: "Alireza", twitterUsername: "Aliireza12t", url: "https://github.com/khs", websiteURL: "swiftwithmajid.com")),
+                        destination: UserInfoView(model: viewModel.userData!),
                         label: {
                             HStack {
                                 Text("UserInfo")
@@ -40,8 +38,8 @@ struct ContentView: View {
                             }
                             .padding()
                         })
-
                 }
+            }
                 
                 
                 Section {

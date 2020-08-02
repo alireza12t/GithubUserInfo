@@ -23,7 +23,7 @@ private extension APIFetcher {
         
         
         #warning("Fill this with your Github Token")
-        static let token = "f6e4f5d3d6f3e6d4d5a1dd15f3f35ae6a69a4a57"
+        static let token = "0ebad68ae0ae8b42e0c7774c93232404f0f9bebd"
     }
     
     func makeRepositoriesComponent(

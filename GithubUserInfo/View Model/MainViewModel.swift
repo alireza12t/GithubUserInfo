@@ -29,11 +29,11 @@ class MainViewModel: ObservableObject, Identifiable {
             .sink(receiveValue: fetchRepositories(forUserName: ))
             .store(in: &disposables)
         
-//        $userName
-//            .dropFirst(1)
-//            .debounce(for: .seconds(0.5), scheduler: scheduler)
-//            .sink(receiveValue: fetchUser(forUserName:))
-//            .store(in: &disposables)
+        $userName
+            .dropFirst(1)
+            .debounce(for: .seconds(0.5), scheduler: scheduler)
+            .sink(receiveValue: fetchUser(forUserName:))
+            .store(in: &disposables)
     }
     
     func fetchRepositories(forUserName userName: String) {
@@ -59,23 +59,23 @@ class MainViewModel: ObservableObject, Identifiable {
             .store(in: &disposables)
     }
     
-//    func fetchUser(forUserName userName: String) {
-//        githubFetcher.user(userName: userName)
-//            .receive(on: DispatchQueue.main)
-//            .sink(receiveCompletion: { [weak self] (value) in
-//                guard let self = self else { return }
-//                switch value {
-//                case .failure:
-//                    self.userData = nil
-//                case .finished:
-//                    break
-//                }
-//            }, receiveValue: { [weak self] (user) in
-//                guard let self = self else { return }
-//
-//                self.userData = UserViewModel(item: user)
-//            })
-//            .store(in: &disposables)
-//    }
+    func fetchUser(forUserName userName: String) {
+        githubFetcher.user(userName: userName)
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { [weak self] (value) in
+                guard let self = self else { return }
+                switch value {
+                case .failure:
+                    self.userData = nil
+                case .finished:
+                    break
+                }
+            }, receiveValue: { [weak self] (user) in
+                guard let self = self else { return }
+
+                self.userData = user.data?.user
+            })
+            .store(in: &disposables)
+    }
 }
 
