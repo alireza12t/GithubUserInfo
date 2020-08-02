@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,12 @@
 		F567C52524D6BE660072A02A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C52424D6BE660072A02A /* ContentView.swift */; };
 		F567C52724D6BE680072A02A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F567C52624D6BE680072A02A /* Assets.xcassets */; };
 		F567C52A24D6BE680072A02A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F567C52924D6BE680072A02A /* Preview Assets.xcassets */; };
+		F567C53524D6C0060072A02A /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C53424D6C0060072A02A /* Array.swift */; };
+		F567C53924D6C0310072A02A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C53824D6C0310072A02A /* ImageLoader.swift */; };
+		F567C53F24D6C0490072A02A /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C53B24D6C0480072A02A /* Repositories.swift */; };
+		F567C54024D6C0490072A02A /* JSonNull.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C53C24D6C0480072A02A /* JSonNull.swift */; };
+		F567C54124D6C0490072A02A /* EpmtyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C53D24D6C0480072A02A /* EpmtyResponse.swift */; };
+		F567C54224D6C0490072A02A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C53E24D6C0490072A02A /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,12 @@
 		F567C52624D6BE680072A02A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F567C52924D6BE680072A02A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F567C52B24D6BE680072A02A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F567C53424D6C0060072A02A /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		F567C53824D6C0310072A02A /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		F567C53B24D6C0480072A02A /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		F567C53C24D6C0480072A02A /* JSonNull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSonNull.swift; sourceTree = "<group>"; };
+		F567C53D24D6C0480072A02A /* EpmtyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpmtyResponse.swift; sourceTree = "<group>"; };
+		F567C53E24D6C0490072A02A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FD24D72A66B9286074C3B24A /* Pods-GithubUserInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubUserInfo.release.xcconfig"; path = "Target Support Files/Pods-GithubUserInfo/Pods-GithubUserInfo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,7 +64,6 @@
 				2917016FF2BC89D2182CB9BA /* Pods-GithubUserInfo.debug.xcconfig */,
 				FD24D72A66B9286074C3B24A /* Pods-GithubUserInfo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +90,11 @@
 			children = (
 				F567C52224D6BE660072A02A /* GithubUserInfoApp.swift */,
 				F567C52424D6BE660072A02A /* ContentView.swift */,
+				F567C53A24D6C0360072A02A /* Image Loader */,
+				F567C53624D6C00C0072A02A /* Tools */,
+				F567C53224D6BFD60072A02A /* Model */,
+				F567C53124D6BFCA0072A02A /* Views */,
+				F567C53324D6BFDC0072A02A /* Network */,
 				F567C52624D6BE680072A02A /* Assets.xcassets */,
 				F567C52B24D6BE680072A02A /* Info.plist */,
 				F567C52824D6BE680072A02A /* Preview Content */,
@@ -92,6 +108,55 @@
 				F567C52924D6BE680072A02A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F567C53124D6BFCA0072A02A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F567C53224D6BFD60072A02A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F567C53D24D6C0480072A02A /* EpmtyResponse.swift */,
+				F567C53C24D6C0480072A02A /* JSonNull.swift */,
+				F567C53B24D6C0480072A02A /* Repositories.swift */,
+				F567C53E24D6C0490072A02A /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F567C53324D6BFDC0072A02A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F567C53624D6C00C0072A02A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F567C53724D6C0140072A02A /* Extensions */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F567C53724D6C0140072A02A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F567C53424D6C0060072A02A /* Array.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F567C53A24D6C0360072A02A /* Image Loader */ = {
+			isa = PBXGroup;
+			children = (
+				F567C53824D6C0310072A02A /* ImageLoader.swift */,
+			);
+			path = "Image Loader";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F567C54024D6C0490072A02A /* JSonNull.swift in Sources */,
+				F567C53524D6C0060072A02A /* Array.swift in Sources */,
+				F567C54124D6C0490072A02A /* EpmtyResponse.swift in Sources */,
+				F567C53F24D6C0490072A02A /* Repositories.swift in Sources */,
+				F567C54224D6C0490072A02A /* User.swift in Sources */,
 				F567C52524D6BE660072A02A /* ContentView.swift in Sources */,
+				F567C53924D6C0310072A02A /* ImageLoader.swift in Sources */,
 				F567C52324D6BE660072A02A /* GithubUserInfoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
