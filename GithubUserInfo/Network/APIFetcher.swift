@@ -57,7 +57,7 @@ extension APIFetcher: GithubFetchable {
         return request(with: makeRepositoriesComponent(withUserName: userName))
     }
     
-    func user(userName: String) -> AnyPublisher<User, GithubError> {
+    func user(userName: String) -> AnyPublisher<UserData, GithubError> {
         return requestGraphQL(with: makeUserComponent(), userName)
     }
     

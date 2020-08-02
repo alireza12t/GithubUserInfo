@@ -23,6 +23,7 @@
 		F567C54924D6C3260072A02A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C54824D6C3260072A02A /* MainViewModel.swift */; };
 		F567C54B24D6C3620072A02A /* RepositoryItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C54A24D6C3620072A02A /* RepositoryItemViewModel.swift */; };
 		F567C54D24D6C3730072A02A /* RepositoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C54C24D6C3730072A02A /* RepositoryItemView.swift */; };
+		F5ADD25D24D6C96F00F1A1C4 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ADD25C24D6C96F00F1A1C4 /* UserInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		F567C54824D6C3260072A02A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		F567C54A24D6C3620072A02A /* RepositoryItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryItemViewModel.swift; sourceTree = "<group>"; };
 		F567C54C24D6C3730072A02A /* RepositoryItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryItemView.swift; sourceTree = "<group>"; };
+		F5ADD25C24D6C96F00F1A1C4 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		FD24D72A66B9286074C3B24A /* Pods-GithubUserInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubUserInfo.release.xcconfig"; path = "Target Support Files/Pods-GithubUserInfo/Pods-GithubUserInfo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 			children = (
 				F567C52424D6BE660072A02A /* ContentView.swift */,
 				F567C54C24D6C3730072A02A /* RepositoryItemView.swift */,
+				F5ADD25C24D6C96F00F1A1C4 /* UserInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F567C54024D6C0490072A02A /* JSonNull.swift in Sources */,
+				F5ADD25D24D6C96F00F1A1C4 /* UserInfoView.swift in Sources */,
 				F567C53524D6C0060072A02A /* Array.swift in Sources */,
 				F567C54624D6C0980072A02A /* APIFetcher.swift in Sources */,
 				F567C54B24D6C3620072A02A /* RepositoryItemViewModel.swift in Sources */,
