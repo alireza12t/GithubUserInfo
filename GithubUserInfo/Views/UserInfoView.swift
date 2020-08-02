@@ -8,8 +8,10 @@
 import SwiftUI
 import MessageUI
 
-struct UserInfoView: View, MFMailComposeViewControllerDelegateMFMailComposeViewControllerDelegate {
+struct UserInfoView: View {
     private let userModel: User
+    @State var presentingModal = false
+
     
     init(model: User) {
         self.userModel = model
@@ -35,19 +37,20 @@ struct UserInfoView: View, MFMailComposeViewControllerDelegateMFMailComposeViewC
         }
     }
     
-    func emailSupport(mail: String) {
-           if MFMailComposeViewController.canSendMail() {
-               let mail = MFMailComposeViewController()
-               mail.mailComposeDelegate = self
-               mail.setSubject("Some subject")
-               mail.setToRecipients(["someemail@example.com"])
-               mail.setMessageBody("Some body", isHTML:false)
-
-               present(mail, animated: true)
-           } else {
-               // show failure alert
-           }
-       }
+//    func openEmail(mail: String) {
+//           if MFMailComposeViewController.canSendMail() {
+//               let mail = MFMailComposeViewController()
+//               mail.mailComposeDelegate = self
+//               mail.setSubject("Some subject")
+//               mail.setToRecipients(["someemail@example.com"])
+//               mail.setMessageBody("Some body", isHTML:false)
+//
+//            self.presentingModal = true
+//
+//           } else {
+//               // show failure alert
+//           }
+//       }
     
 }
 
@@ -55,8 +58,45 @@ private extension UserInfoView {
     var Communication: some View {
         VStack(alignment: .leading, spacing: 15){
             HStack {
+                if userModel.twitterUsername != nil {
+                    HStack {
+                        Image("twitter")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+
+                        
+                        Text("@\(userModel.twitterUsername!)")
+                    }
+                }
+            }
+            .padding()
+            
+            HStack {
+                if userModel.websiteURL != nil {
+                    HStack {
+                        Image(systemName: "safari.fill")
+                            .resizable()
+                            .foregroundColor(.blue)
+                            .frame(width: 40, height: 40)
+
+                        
+                        Text("https://\(userModel.websiteURL!)")
+                    }
+                }
+            }
+            .padding()
+            
+            HStack {
                 if userModel.email != nil {
-                    Image(systemName: "")
+                    HStack {
+                        Image(systemName: "mail.fill")
+                            .resizable()
+                            .foregroundColor(.blue)
+                            .frame(width: 40, height: 40)
+
+                        
+                        Text("\(userModel.email!)")
+                    }
                 }
             }
             .padding()
