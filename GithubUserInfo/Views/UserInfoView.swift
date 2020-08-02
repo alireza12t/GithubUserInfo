@@ -237,24 +237,11 @@ private extension UserInfoView {
     
     var ProfilePicure: some View {
         HStack{
+            //TODO: - Fix probllem in downloading image profile
             if userModel.avatarURL != nil {
-                Image("h")
-                    .resizable()
-                    .frame(width: 100, height: 100)
-                    .clipShape(Circle())
-                    .overlay(
-                        Circle()
-                            .stroke(Color("gold"), lineWidth: 2.5)
-                    )
+                CustomImageView(image: UIImage(systemName: "person.crop.circle.fill")!)
             } else {
-                Image(systemName: "person.crop.circle.fill")
-                    .resizable()
-                    .frame(width: 100, height: 100)
-                    .clipShape(Circle())
-                    .overlay(
-                        Circle()
-                            .stroke(Color("gold"), lineWidth: 2.5)
-                    )
+                CustomImageView(image: UIImage(systemName: "person.crop.circle.fill")!)
                     .redacted(reason: .placeholder)
             }
         }

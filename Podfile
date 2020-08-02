@@ -6,5 +6,5 @@ target 'GithubUserInfo' do
 
   # Pods for GithubUserInfo
 	pod 'Alamofire'
-
+  pod 'URLImage'
 end

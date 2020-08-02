@@ -13,7 +13,6 @@
 		F567C52724D6BE680072A02A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F567C52624D6BE680072A02A /* Assets.xcassets */; };
 		F567C52A24D6BE680072A02A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F567C52924D6BE680072A02A /* Preview Assets.xcassets */; };
 		F567C53524D6C0060072A02A /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C53424D6C0060072A02A /* Array.swift */; };
-		F567C53924D6C0310072A02A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C53824D6C0310072A02A /* ImageLoader.swift */; };
 		F567C53F24D6C0490072A02A /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C53B24D6C0480072A02A /* Repositories.swift */; };
 		F567C54024D6C0490072A02A /* JSonNull.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C53C24D6C0480072A02A /* JSonNull.swift */; };
 		F567C54124D6C0490072A02A /* EpmtyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C53D24D6C0480072A02A /* EpmtyResponse.swift */; };
@@ -24,6 +23,7 @@
 		F567C54B24D6C3620072A02A /* RepositoryItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C54A24D6C3620072A02A /* RepositoryItemViewModel.swift */; };
 		F567C54D24D6C3730072A02A /* RepositoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C54C24D6C3730072A02A /* RepositoryItemView.swift */; };
 		F5ADD25D24D6C96F00F1A1C4 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ADD25C24D6C96F00F1A1C4 /* UserInfoView.swift */; };
+		F5B14EFD24D6DF0000360A55 /* ProfilePictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B14EFC24D6DF0000360A55 /* ProfilePictureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,6 @@
 		F567C52924D6BE680072A02A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F567C52B24D6BE680072A02A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F567C53424D6C0060072A02A /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		F567C53824D6C0310072A02A /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		F567C53B24D6C0480072A02A /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
 		F567C53C24D6C0480072A02A /* JSonNull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSonNull.swift; sourceTree = "<group>"; };
 		F567C53D24D6C0480072A02A /* EpmtyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpmtyResponse.swift; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		F567C54A24D6C3620072A02A /* RepositoryItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryItemViewModel.swift; sourceTree = "<group>"; };
 		F567C54C24D6C3730072A02A /* RepositoryItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryItemView.swift; sourceTree = "<group>"; };
 		F5ADD25C24D6C96F00F1A1C4 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		F5B14EFC24D6DF0000360A55 /* ProfilePictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureView.swift; sourceTree = "<group>"; };
 		FD24D72A66B9286074C3B24A /* Pods-GithubUserInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubUserInfo.release.xcconfig"; path = "Target Support Files/Pods-GithubUserInfo/Pods-GithubUserInfo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				F567C52224D6BE660072A02A /* GithubUserInfoApp.swift */,
-				F567C53A24D6C0360072A02A /* Image Loader */,
 				F567C53624D6C00C0072A02A /* Tools */,
 				F567C53224D6BFD60072A02A /* Model */,
 				F567C54724D6C3140072A02A /* View Model */,
@@ -128,6 +127,7 @@
 				F567C52424D6BE660072A02A /* ContentView.swift */,
 				F567C54C24D6C3730072A02A /* RepositoryItemView.swift */,
 				F5ADD25C24D6C96F00F1A1C4 /* UserInfoView.swift */,
+				F5B14EFC24D6DF0000360A55 /* ProfilePictureView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,14 +166,6 @@
 				F567C53424D6C0060072A02A /* Array.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		F567C53A24D6C0360072A02A /* Image Loader */ = {
-			isa = PBXGroup;
-			children = (
-				F567C53824D6C0310072A02A /* ImageLoader.swift */,
-			);
-			path = "Image Loader";
 			sourceTree = "<group>";
 		};
 		F567C54724D6C3140072A02A /* View Model */ = {
@@ -302,6 +294,7 @@
 				F5ADD25D24D6C96F00F1A1C4 /* UserInfoView.swift in Sources */,
 				F567C53524D6C0060072A02A /* Array.swift in Sources */,
 				F567C54624D6C0980072A02A /* APIFetcher.swift in Sources */,
+				F5B14EFD24D6DF0000360A55 /* ProfilePictureView.swift in Sources */,
 				F567C54B24D6C3620072A02A /* RepositoryItemViewModel.swift in Sources */,
 				F567C54124D6C0490072A02A /* EpmtyResponse.swift in Sources */,
 				F567C54424D6C0800072A02A /* GithubError.swift in Sources */,
@@ -309,7 +302,6 @@
 				F567C54D24D6C3730072A02A /* RepositoryItemView.swift in Sources */,
 				F567C54224D6C0490072A02A /* User.swift in Sources */,
 				F567C52524D6BE660072A02A /* ContentView.swift in Sources */,
-				F567C53924D6C0310072A02A /* ImageLoader.swift in Sources */,
 				F567C52324D6BE660072A02A /* GithubUserInfoApp.swift in Sources */,
 				F567C54924D6C3260072A02A /* MainViewModel.swift in Sources */,
 			);
