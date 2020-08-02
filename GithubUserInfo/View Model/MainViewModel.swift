@@ -13,7 +13,7 @@ import Combine
 class MainViewModel: ObservableObject, Identifiable {
     @Published var userName: String = ""
     @Published var dataSource: [RepositoryItemViewModel] = []
-//    @Published var userData: UserViewModel?
+    @Published var userData: User?
     
     private let githubFetcher: APIFetcher
     private var disposables = Set<AnyCancellable>()
