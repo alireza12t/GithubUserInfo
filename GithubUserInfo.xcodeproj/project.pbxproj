@@ -20,6 +20,9 @@
 		F567C54224D6C0490072A02A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C53E24D6C0490072A02A /* User.swift */; };
 		F567C54424D6C0800072A02A /* GithubError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C54324D6C0800072A02A /* GithubError.swift */; };
 		F567C54624D6C0980072A02A /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C54524D6C0980072A02A /* APIFetcher.swift */; };
+		F567C54924D6C3260072A02A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C54824D6C3260072A02A /* MainViewModel.swift */; };
+		F567C54B24D6C3620072A02A /* RepositoryItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C54A24D6C3620072A02A /* RepositoryItemViewModel.swift */; };
+		F567C54D24D6C3730072A02A /* RepositoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F567C54C24D6C3730072A02A /* RepositoryItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		F567C53E24D6C0490072A02A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F567C54324D6C0800072A02A /* GithubError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubError.swift; sourceTree = "<group>"; };
 		F567C54524D6C0980072A02A /* APIFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFetcher.swift; sourceTree = "<group>"; };
+		F567C54824D6C3260072A02A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		F567C54A24D6C3620072A02A /* RepositoryItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryItemViewModel.swift; sourceTree = "<group>"; };
+		F567C54C24D6C3730072A02A /* RepositoryItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryItemView.swift; sourceTree = "<group>"; };
 		FD24D72A66B9286074C3B24A /* Pods-GithubUserInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubUserInfo.release.xcconfig"; path = "Target Support Files/Pods-GithubUserInfo/Pods-GithubUserInfo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,10 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				F567C52224D6BE660072A02A /* GithubUserInfoApp.swift */,
-				F567C52424D6BE660072A02A /* ContentView.swift */,
 				F567C53A24D6C0360072A02A /* Image Loader */,
 				F567C53624D6C00C0072A02A /* Tools */,
 				F567C53224D6BFD60072A02A /* Model */,
+				F567C54724D6C3140072A02A /* View Model */,
 				F567C53124D6BFCA0072A02A /* Views */,
 				F567C53324D6BFDC0072A02A /* Network */,
 				F567C52624D6BE680072A02A /* Assets.xcassets */,
@@ -117,6 +123,8 @@
 		F567C53124D6BFCA0072A02A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F567C52424D6BE660072A02A /* ContentView.swift */,
+				F567C54C24D6C3730072A02A /* RepositoryItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +171,15 @@
 				F567C53824D6C0310072A02A /* ImageLoader.swift */,
 			);
 			path = "Image Loader";
+			sourceTree = "<group>";
+		};
+		F567C54724D6C3140072A02A /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				F567C54A24D6C3620072A02A /* RepositoryItemViewModel.swift */,
+				F567C54824D6C3260072A02A /* MainViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,13 +298,16 @@
 				F567C54024D6C0490072A02A /* JSonNull.swift in Sources */,
 				F567C53524D6C0060072A02A /* Array.swift in Sources */,
 				F567C54624D6C0980072A02A /* APIFetcher.swift in Sources */,
+				F567C54B24D6C3620072A02A /* RepositoryItemViewModel.swift in Sources */,
 				F567C54124D6C0490072A02A /* EpmtyResponse.swift in Sources */,
 				F567C54424D6C0800072A02A /* GithubError.swift in Sources */,
 				F567C53F24D6C0490072A02A /* Repositories.swift in Sources */,
+				F567C54D24D6C3730072A02A /* RepositoryItemView.swift in Sources */,
 				F567C54224D6C0490072A02A /* User.swift in Sources */,
 				F567C52524D6BE660072A02A /* ContentView.swift in Sources */,
 				F567C53924D6C0310072A02A /* ImageLoader.swift in Sources */,
 				F567C52324D6BE660072A02A /* GithubUserInfoApp.swift in Sources */,
+				F567C54924D6C3260072A02A /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
